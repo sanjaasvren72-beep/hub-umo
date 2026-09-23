@@ -6,6 +6,11 @@
 <style>
 *{box-sizing:border-box}body{margin:0;background:#eef4f8;color:#14202a;font-family:Arial,sans-serif}
 .wrap{max-width:760px;margin:auto;padding:16px}.card{background:#fff;border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 5px 24px #0001}
+.topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.topbar h1{flex:1}
+.admin-btn{flex-shrink:0;text-decoration:none;padding:9px 12px;border-radius:9px;background:#14202a;color:#fff;font-size:13px;font-weight:bold;white-space:nowrap}
+.admin-btn:hover{opacity:.88}
+@media(max-width:600px){.topbar{align-items:center}.admin-btn{font-size:12px;padding:8px 10px}h1{font-size:21px}}
 h1{font-size:24px;margin:0 0 8px}h2{font-size:18px}li{margin:9px 0;line-height:1.45}
 select,input,button{font:inherit}select{width:100%;padding:13px;border:1px solid #b9c7d3;border-radius:10px;background:#fff}
 .check{display:flex;gap:10px;margin:15px 0;align-items:flex-start}.check input{width:20px;height:20px}
@@ -14,7 +19,12 @@ select,input,button{font:inherit}select{width:100%;padding:13px;border:1px solid
 #msg{margin-top:12px;font-weight:bold}.small{color:#667785;font-size:13px}
 </style></head>
 <body><div class="wrap">
-<div class="card"><h1>АЮУЛГҮЙ АЖИЛЛАГААНЫ ЗААВАРЧИЛГАА</h1><div class="small">Нэвтрэх болон бүртгэл үүсгэх шаардлагагүй.</div>
+<div class="card">
+<div class="topbar">
+  <h1>АЮУЛГҮЙ АЖИЛЛАГААНЫ ЗААВАРЧИЛГАА</h1>
+  <a class="admin-btn" href="/admin">🔐 АДМИН</a>
+</div>
+<div class="small">Нэвтрэх болон бүртгэл үүсгэх шаардлагагүй.</div>
 <ol>
 <li>Ажлын байрны зааварчилгаатай бүрэн танилцана.</li>
 <li>Ажил эхлэхийн өмнө ажлын байр, багаж хэрэгслийн бүрэн бүтэн байдлыг шалгана.</li>
