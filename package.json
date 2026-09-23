@@ -1,0 +1,6 @@
+{
+  "name":"umo-aa-burtgel",
+  "private":true,
+  "scripts":{"dev":"wrangler dev","deploy":"wrangler deploy","db:migrate":"wrangler d1 migrations apply umo-aa-burtgel-db --remote"},
+  "devDependencies":{"wrangler":"latest"}
+}
